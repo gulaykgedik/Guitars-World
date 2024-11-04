@@ -1,0 +1,57 @@
+$color-primary: #0e1111;
+$color-primary-light: #232b2b;
+$color-secondary: #353839;
+
+$color-secondary-light: #3b444b;
+$color-accent: #414a4c;
+
+$color-black: black;
+$color-text: #333;
+$color-white: #ffff;
+$color-white-transparent: rgba($color-white, 0.8);
+
+$font-primary: Lato, "Sans-serif";
+
+$button-border-radius: 0.5rem;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+::selection {
+  color: $color-black;
+  background-color: $color-white;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+
+  @include responsive(tab-land) {
+    font-size: 56.25%;
+  }
+
+  @include responsive(tab-port) {
+    font-size: 50%;
+  }
+
+  @include responsive(phone) {
+    font-size: 43.75%;
+  }
+
+  @include responsive(big-desktop) {
+    font-size: 75%;
+  }
+}
+
+body {
+  font-family: $font-primary;
+  color: $color-text;
+  font-weight: 400;
+  line-height: 1.6;
+  background-color: $color-primary;
+}

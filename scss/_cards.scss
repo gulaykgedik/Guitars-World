@@ -1,0 +1,83 @@
+.card {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  width: 100%;
+  font-size: 2rem;
+  color: $color-white-transparent;
+  margin-top: 5rem;
+  padding: 2rem;
+
+  @include responsive(tab-land) {
+    flex-wrap: wrap;
+  }
+
+  &-item {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40rem;
+    height: 25rem;
+    border-radius: $button-border-radius;
+    cursor: pointer;
+    transition: all 0.2s;
+
+    @include responsive(tab-land) {
+      margin: 2rem;
+    }
+
+    @include responsive(phone) {
+      flex-basis: 75% !important;
+    }
+
+    &:hover {
+      transform: translateY(0.5rem) scale(1.1);
+      color: $color-white;
+    }
+    &-1 {
+      background-color: $color-accent;
+      @include responsive(tab-land) {
+        flex-basis: 45%;
+      }
+    }
+    &-2 {
+      background-color: $color-secondary-light;
+      @include responsive(tab-land) {
+        flex-basis: 45%;
+      }
+    }
+    &-3 {
+      background-color: $color-secondary;
+      @include responsive(tab-land) {
+        flex-basis: 45%;
+      }
+    }
+    &-4 {
+      background-color: $color-primary-light;
+      @include responsive(tab-land) {
+        flex-basis: 45%;
+      }
+    }
+  }
+
+  &-header {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+  }
+
+  &-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 1005;
+    margin-top: 3rem;
+  }
+
+  &-icon {
+    font-size: 10rem;
+    margin-right: 3rem;
+  }
+}
