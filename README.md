@@ -15,8 +15,11 @@ Guitars World, gitar severler için hazırlanmış, gitar çeşitleri hakkında 
 ## Kullanılan Teknolojiler 🛠️
 <br/>
 ✨ HTML5: Sayfa yapısı için.
+
 ✨ CSS3: Stil ve görsellik için.
+
 ✨ SCSS: Daha modüler ve bakımı kolay bir CSS yazımı için.
+
 
 
 ## Ekran Görüntüsü 
